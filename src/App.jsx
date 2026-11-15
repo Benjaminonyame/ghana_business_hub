@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
-import { supabase } from './supabase.js';
+import { Analytics } from '@vercel/analytics/react';
+import { supabase } from '../supabase.js';
 
 export default function App() {
   const [search, setSearch] = useState('');
@@ -99,6 +100,7 @@ export default function App() {
       <footer>
         <p>© 2026 Ghana Business Hub. Connecting Ghana.</p>
       </footer>
+      <Analytics />
     </div>
   );
 }
